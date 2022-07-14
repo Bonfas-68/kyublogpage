@@ -1,0 +1,130 @@
+.app__home {
+  padding: 1rem;
+}
+.app__home-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+  grid-template-rows: 4rem repeat(10, 10rem);
+}
+
+.app__home-sidebar {
+  grid-row: 1/2;
+  grid-column: 2/-2;
+  /* box-shadow: 0 2px 1px #777; */
+}
+.app__home-content {
+  grid-row: 2/8;
+  grid-column: 2/10;
+  padding: 0 2rem;
+}
+
+.app__home-latest {
+  position: fixed;
+  top: 18%;
+  right: 4%;
+  height: 220px;
+  width: 25%;
+  grid-column: 10/-2;
+  grid-row: 2/6;
+  /* background: purple; */
+  margin: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: -2px 3px 4px 4px #ddd;
+}
+.app__home-pages {
+  position: fixed;
+  top: 60%;
+  right: 4%;
+  height: 80px;
+  width: 25%;
+  font-weight: 100;
+  box-shadow: -2px 3px 4px 4px #ddd;
+  padding: 1rem;
+
+  grid-column: 10/-2;
+  grid-row: 7/10;
+  border-radius: 0.5rem;
+  /* background: resd; */
+  margin: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .app__home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+  }
+}
+@media (max-width: 991px) {
+  .app__home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 8rem)) 1fr;
+  }
+}
+@media (max-width: 784px) {
+  .app__home-wrapper {
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 6rem)) 1fr;
+  }
+  .app__home-latest,
+  .app__home-pages {
+    margin: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .app__home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .app__home {
+    background: #fff;
+    padding: 1.2rem 2.5rem;
+  }
+
+  .app__home-sidebar {
+    flex-wrap: wrap;
+    grid-column: 1/-1;
+  }
+  .app__home-content {
+    grid-column: 1/-1;
+  }
+  .app__home-latest {
+    display: none;
+  }
+  .app__home-pages {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .app__home-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .app__home {
+    padding: 1.2rem 1rem;
+  }
+
+  .app__home-sidebar {
+    flex-wrap: wrap;
+    grid-column: 1/-1;
+  }
+  .app__home-content {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 305px) {
+  .app__home-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .app__home {
+    padding: 2rem 0.8rem 7.2rem 0.8rem;
+  }
+  .app__home-sidebar {
+    box-shadow: none;
+    padding: 0.2rem;
+  }
+  .app__home-content {
+    padding: 0.2rem;
+    padding-bottom: 5rem;
+  }
+}

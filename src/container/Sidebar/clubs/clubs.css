@@ -1,0 +1,118 @@
+.app__clubs {
+  background: #aed5d7;
+  z-index: -1;
+}
+.section__padding {
+}
+.app__intro {
+  text-align: center;
+  font-family: sans-serif;
+  width: 85%;
+  margin: 2rem auto;
+  line-height: 1.6;
+}
+.head {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #011e0c;
+  text-transform: capitalize;
+}
+.text {
+  margin: 0.8rem 0;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+.app__clubs-wrapper {
+  width: 80%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 2rem;
+}
+.app__clubs-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: -1px 1px 1px 1px #ccc;
+  position: relative;
+  width: 100%;
+}
+.app__clubs-card:hover .app__clubs-name {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%;  */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.app__clubs-name {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: #022010;
+  font-weight: 300;
+  padding: 0.5rem;
+  backface-visibility: hidden;
+  transition: 0.5s height 1s ease;
+}
+.club_img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .app__clubs-wrapper {
+    width: 85%;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .app__intro {
+    width: 90%;
+  }
+  .club_img {
+    object-fit: cover;
+  }
+
+  .app__intro .text {
+    width: 75%;
+  }
+}
+@media (max-width: 650px) {
+  .app__clubs-wrapper {
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .app__intro {
+    width: 100%;
+  }
+  .app__intro .text {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .app__intro {
+    line-height: 1.2;
+  }
+  .app__intro .head {
+    font-size: 2.8rem;
+  }
+  .app__intro .text {
+    width: 100%;
+  }
+  .app__clubs-name {
+    font-size: 1.6rem;
+  }
+}

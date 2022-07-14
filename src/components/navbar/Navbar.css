@@ -1,0 +1,115 @@
+.app__navbar {
+  padding: 1.2rem 1rem;
+  background: #012514;
+  color: #ffffff;
+}
+
+/* .flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.app__navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.app__navbar-logo {
+  font-size: 1rem;
+}
+
+.app__navbar-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__navbar-nav_item {
+  margin: 0 1.5rem 0 0;
+  list-style: none;
+}
+.app__navbar-nav_link {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.app_active_link,
+.app__navbar-nav_link:hover {
+  color: gray;
+}
+
+.app__navbar-login {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__btn {
+  text-transform: capitalize;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.6rem;
+  transition: 0.5s ease;
+}
+.app__btn:hover {
+  border-bottom: 1px solid gray;
+}
+.app__navbar-icon {
+  display: none;
+  z-index: 9999;
+}
+
+@media (max-width: 991px) {
+  .app__navbar-nav {
+    display: none;
+  }
+  .app__navbar-icon {
+    display: inline-block;
+  }
+  .app__navbar-smallscreen {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #012514;
+    text-align: center;
+    z-index: 9;
+  }
+  .app__navbar-smallscreen-nav {
+    margin: 0;
+    padding: 0;
+  }
+  .app__navbar-smallscreen .app__navbar-nav_item {
+    margin: 4rem 0;
+  }
+  .app__navbar-smallscreen .app__navbar-nav_link {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 650px) {
+  .app__navbar-login {
+    display: none;
+  }
+
+  .app__navbar-logo {
+    font-size: 1rem;
+  }
+
+  .app__navbar-smallscreen .app__navbar-nav_item {
+    margin: 4rem 0;
+  }
+  .app__navbar-smallscreen .app__navbar-nav_link {
+    font-size: 3.2rem;
+  }
+}

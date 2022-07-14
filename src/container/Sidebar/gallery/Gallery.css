@@ -1,0 +1,72 @@
+.app_gallery {
+  padding: 2rem;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__gallery-container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.img__container {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app__gallery-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.app__gallery-btn button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #decedd;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.app__gallery-btn button:hover {
+  background: #023616bf;
+  border: 1px solid #0e022c;
+}
+.app__gallery-btn button:hover .app__gallery-icon {
+  color: #070369;
+}
+.btn-left {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.app__gallery-icon {
+  font-size: 2rem;
+  color: #020113;
+}
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}

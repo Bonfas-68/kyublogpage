@@ -1,0 +1,28 @@
+.text__center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.app__sidebar {
+  border-radius: 0.5rem;
+}
+.app__sidebar-link {
+  display: flex;
+  padding: 1rem 0;
+  text-decoration: none;
+  font-size: 0.5rem;
+  color: #01171f;
+  transition: 0.5s ease;
+}
+
+.app__sidebar-link h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 0 0.2rem;
+  margin-left: 1rem;
+}
+.app__sidebar-link:hover {
+  color: #111;
+}
