@@ -8,6 +8,8 @@ import Events from './container/Sidebar/events/Events';
 import Gallery from './container/Sidebar/gallery/Gallery';
 import Clubs from './container/Sidebar/clubs/Clubs';
 import Hostels from './components/hostels/Hostels';
+import Contact from './components/contact/Contact';
+import Blog from './components/blog/Blog';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route exact path="gallery" element={<Gallery />} />
           <Route exact path="hostels" element={<Hostels />} />
           <Route exact path="*" element={<NotFound />} />
+          <Route exact path="contact" element={<Contact />} />
+          <Route exact path="blog" element={<Blog />} />
         </Routes>
         <Footer />
       </BrowserRouter>

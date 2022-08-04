@@ -1,5 +1,9 @@
 .app__home {
   padding: 1rem;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .app__home-wrapper {
   position: relative;
@@ -69,6 +73,7 @@
   .app__home-latest,
   .app__home-pages {
     margin: 0;
+    display: none;
   }
 }
 

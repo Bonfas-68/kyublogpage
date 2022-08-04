@@ -2,6 +2,7 @@
   background: #0c0c0c;
   position: relative;
   z-index: -1;
+  padding: 3rem 0;
 }
 .app__events-wrapper {
   width: 80%;

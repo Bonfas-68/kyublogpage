@@ -1,6 +1,20 @@
+import wildlife from '../../assets/wildlife.jpeg';
+import debate from '../../assets/debate.jpg';
+import dance from '../../assets/dance.jpeg';
+import unesco from '../../assets/unesco.jpeg';
+import taekwondo from '../../assets/taekwondo.jpeg';
+import mentor from '../../assets/mentor.jpeg';
+import music from '../../assets/music.jpeg';
+import muslim from '../../assets/muslim.jpeg';
+import sda from '../../assets/sda.jpeg';
+import sports from '../../assets/sports.jpeg';
+import innovation from '../../assets/innovation.jpeg';
+import drama from '../../assets/drama.jpeg';
+
 const data = [
   {
     id: 1,
+    img: wildlife,
     owner: 'Not available',
     name: 'ACK Dioces Of Kirinyaga (OASIS)',
     desc: [
@@ -10,11 +24,12 @@ const data = [
       'Bed and mattresses provided',
       'Meals not provided',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 2,
+    img: debate,
     owner: 'Not available',
     name: 'Graceland',
     desc: [
@@ -26,11 +41,12 @@ const data = [
       'Water provided at no extra charges',
       'Students to meet own electricity charges pre-paid tokens',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 3,
+    img: dance,
     owner: 'Not available',
     name: 'HemiChaff Hostels',
     desc: [
@@ -38,11 +54,12 @@ const data = [
       'Large rooms 6000 per room per month per person and 8000 per room (2 sharing)',
       'Small rooms 4000 per room per person',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 4,
+    img: music,
     owner: 'Not available',
     name: 'Executive Hostel',
     desc: [
@@ -57,11 +74,12 @@ const data = [
       'Free WIFI and DSTV services',
       '24 HR CCTV surviellance',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 5,
+    img: muslim,
     owner: 'Not available',
     name: 'CLOVER',
     desc: [
@@ -72,11 +90,12 @@ const data = [
       'Beds and matressses are provided',
       'Beddings  not provided',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 6,
+    img: taekwondo,
     owner: 'Not available',
     name: 'MORY HOSTELS (BLOCKS A & B)',
     desc: [
@@ -86,11 +105,12 @@ const data = [
       'Bed and mattresses are provided',
       'Beddings not provided',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 7,
+    img: sports,
     owner: 'Not available',
     name: 'Paradise',
     desc: [
@@ -99,11 +119,12 @@ const data = [
       'Four students per room',
       'Bed and mattresses provided but no beddings',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 8,
+    img: sda,
     owner: 'Not available',
     name: 'Early Bird Hostels',
     desc: [
@@ -112,11 +133,12 @@ const data = [
       'Students can choose to stay in two or four in aroom and pay different charges as indicated',
       'Bed and mattresses provided but no beddings',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 9,
+    img: unesco,
     owner: 'Not available',
     name: 'Elegant Hostel',
     desc: [
@@ -126,11 +148,12 @@ const data = [
       'Bed and mattresses provided',
       'Chairs adn tables are provided',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 10,
+    img: drama,
     owner: 'Not available',
     name: 'Joslian Hostel',
     desc: [
@@ -140,11 +163,12 @@ const data = [
       'Chairs and tables are provided',
       'Located in kutus about 300m from the university',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 11,
+    img: mentor,
     owner: 'Not available',
     name: 'Amikas Hostel',
     desc: [
@@ -155,11 +179,12 @@ const data = [
       'Meals not provided',
       'Beddings not provided',
     ],
-    img: '',
+
     phone: '',
   },
   {
     id: 12,
+    img: innovation,
     owner: 'Not available',
     name: 'Real Vision Hostel',
     desc: [
@@ -170,7 +195,7 @@ const data = [
       'Bed and mattresses provided but no beddings',
       "There's a kitchen where students can prepare meals at no extra cost",
     ],
-    img: '',
+
     phone: '',
   },
 ];
